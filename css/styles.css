@@ -79,6 +79,7 @@ body {
   height: 4px;
   display: block;
   bottom: 0px;
+  border-radius: 2px;
 }
 
 .header {
