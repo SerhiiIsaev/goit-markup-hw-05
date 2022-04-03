@@ -20,7 +20,7 @@
             <a class="link logo header-logo" href="./index.html" lang="en"> Web<span class="studio">Studio</span> </a>
             <nav class="navigation">
                 <ul class="navigation-list list">
-                    <li class="navigation-item"><a class="link navigation-link current" href="./index.html">Студия</a></li>
+                    <li class="navigation-item"><a class="link navigation-link current current-link" href="./index.html">Студия</a></li>
                     <li class="navigation-item"><a class="link navigation-link" href="./portfolio.html">Портфолио</a></li>
                     <li class="navigation-item"><a class="link navigation-link" href="">Контакты</a></li>
                 </ul>
@@ -50,7 +50,7 @@
         <section class="hero section">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button type="button" class="hero-button" data-modal-open>Заказать услугу</button>
             </div>
         </section>
 
@@ -106,9 +106,18 @@
             <div class="container">
                 <h2 class="work-title">Чем мы занимаемся</h2>
                 <ul class="work-list list">
-                    <li class="work-list-item"><img src="./images/box-1.jpg" alt="рабочий стол" width="370" height="294"></li>
-                    <li class="work-list-item"><img src="./images/box-2.jpg" alt="монитор ноутбука" width="370" height="294"></li>
-                    <li class="work-list-item"><img src="./images/box-3.jpg" alt="игра на планшете" width="370" height="294"></li>
+                    <li class="work-list-item">
+                        <img src="./images/box-1.jpg" alt="рабочий стол" width="370" height="294">
+                        <p class="work-img-text">Десктопные приложения</p> 
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/box-2.jpg" alt="монитор ноутбука" width="370" height="294">
+                        <p class="work-img-text">Мобильные приложения</p>
+                    </li>
+                    <li class="work-list-item">
+                        <img src="./images/box-3.jpg" alt="игра на планшете" width="370" height="294">
+                        <p class="work-img-text">Дизайнерские</p>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -369,5 +378,15 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close-btn" data-modal-close>
+                <svg class="modal-close-icon" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg> 
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
